@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<!-- private String name; private TablePropertyType type; private int length; 
+		private int decimalPoint; private boolean isNull; private boolean isPrimaryKey; -->
+	<property>
+		<name>id</name>
+		<type>Integer</type>
+		<length>11</length>
+		<decimalPoint>0</decimalPoint>
+		<isNull>true</isNull>
+		<isPrimaryKey>true</isPrimaryKey>
+	</property>
+	<property>
+		<name>name</name>
+		<type>String</type>
+		<length>25</length>
+	</property>
+</configuration>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<!-- private String name; private TablePropertyType type; private int length; 
+		private int decimalPoint; private boolean isNull; private boolean isPrimaryKey; -->
+	<!-- <table> <property name="id" type="Integer" length="11"></property> 
+		<property name="name" type="String" length="25"></property> <property name="name" 
+		type="Decimal" ></property> </table> -->
+	<table>
+		<property name="wind_speed" type="Decimal"></property>
+		<property name="generator_speed" type="Decimal"></property>
+		<property name="power" type="Decimal"></property>
+		<property name="wind_direction" type="Decimal"></property>
+		<property name="wind_direction_mean" type="Decimal"></property>
+		<property name="yaw_position" type="Decimal"></property>
+		<property name="yaw_speed" type="Decimal"></property>
+		<property name="pitch1_angle" type="Decimal"></property>
+		<property name="pitch2_angle" type="Decimal"></property>
+		<property name="pitch3_angle" type="Decimal"></property>
+		<property name="pitch1_speed" type="Decimal"></property>
+		<property name="pitch2_speed" type="Decimal"></property>
+		<property name="pitch3_speed" type="Decimal"></property>
+		<property name="pitch1_moto_tmp" type="Decimal"></property>
+		<property name="pitch2_moto_tmp" type="Decimal"></property>
+		<property name="pitch3_moto_tmp" type="Decimal"></property>
+		<property name="acc_x" type="Decimal"></property>
+		<property name="acc_y" type="Decimal"></property>
+		<property name="environment_tmp" type="Decimal"></property>
+		<property name="int_tmp" type="Decimal"></property>
+		<property name="pitch1_ng5_tmp" type="Decimal"></property>
+		<property name="pitch2_ng5_tmp" type="Decimal"></property>
+		<property name="pitch3_ng5_tmp" type="Decimal"></property>
+		<property name="pitch1_ng5_DC" type="Decimal"></property>
+		<property name="pitch2_ng5_DC" type="Decimal"></property>
+		<property name="pitch3_ng5_DC" type="Decimal"></property>
+	</table>
+</configuration>

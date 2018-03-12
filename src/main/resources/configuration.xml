@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<!-- private String name; private TablePropertyType type; private int length; 
+		private int decimalPoint; private boolean isNull; private boolean isPrimaryKey; -->
+	<!-- <table> <property name="id" type="Integer" length="11"></property> 
+		<property name="name" type="String" length="25"></property> <property name="name" 
+		type="DOUBLE" ></property> </table> -->
+
+
+	<table name="customer" rowCount="1500">
+		<!-- <property name="id" type="Integer" isPrimaryKey="true"></property> -->
+		<property name="name" type="String" length="25"></property>
+		<!-- <property name="c_address" type="String" length="40"></property>
+		<property name="c_nationkey" type="Integer" minValue="1" maxValue="24"></property>
+		<property name="c_phone" type="String" length="15"></property>
+		<property name="c_acctbal" type="DOUBLE" minValue="1000" maxValue="10000"></property>
+		<property name="c_mktsegment" type="String" length="10"></property>
+		<property name="c_comment" type="String" length="50"></property> -->
+	</table>
+	
+	<!-- <table name="customer1" rowCount="1500000">
+		<property name="id" type="Integer" isPrimaryKey="true"></property>
+		<property name="name" type="String" length="25"></property>
+		<property name="c_address" type="String" length="40"></property>
+		<property name="c_nationkey" type="Integer" minValue="1" maxValue="24"></property>
+		<property name="c_phone" type="String" length="15"></property>
+		<property name="c_acctbal" type="DOUBLE" minValue="1000" maxValue="10000"></property>
+		<property name="c_mktsegment" type="String" length="10"></property>
+		<property name="c_comment" type="String" length="50"></property>
+	</table>
+	
+	<table name="customer2" rowCount="15000000">
+		<property name="id" type="Integer" isPrimaryKey="true"></property>
+		<property name="name" type="String" length="25"></property>
+		<property name="c_address" type="String" length="40"></property>
+		<property name="c_nationkey" type="Integer" minValue="1" maxValue="24"></property>
+		<property name="c_phone" type="String" length="15"></property>
+		<property name="c_acctbal" type="DOUBLE" minValue="1000" maxValue="10000"></property>
+		<property name="c_mktsegment" type="String" length="10"></property>
+		<property name="c_comment" type="String" length="50"></property>
+	</table> -->
+
+	<!-- <table name="student" rowCount="100">
+		<property name="id" type="Integer" isPrimaryKey="true"></property>
+		<property name="name" type="String"></property>
+		<property name="comment" type="String"></property>
+	</table>
+
+	<table name="cource" rowCount="100">
+		<property name="id" type="Integer" isPrimaryKey="true"></property>
+		<property name="name" type="String"></property>
+	</table>
+
+	<table name="sorce" rowCount="100">
+		<property name="id" type="Integer" isPrimaryKey="true"></property>
+		<property name="sid" type="DOUBLE" isForeignKey="true" table="student"
+			field="sid" minValue="1" maxValue="100"></property>
+		<property name="cid" type="DOUBLE" isForeignKey="true" table="cource"
+			field="cid" minValue="1" maxValue="100"></property>
+		<property name="sorce" type="DOUBLE" minValue="1" maxValue="1000"
+			decimalPoint="1" feature="Gauss"></property>
+	</table> -->
+
+	<!-- <table name="sample1"> <property name="wind_speed" type="DOUBLE" minValue="1" 
+		maxValue="100000" decimalPoint="5"></property> <property name="generator_speed" 
+		type="DOUBLE" minValue="1" maxValue="100000" decimalPoint="5"></property> 
+		<property name="power" type="DOUBLE" minValue="1" maxValue="100000" decimalPoint="5"></property> 
+		<property name="wind_direction" type="DOUBLE" minValue="1" maxValue="100000" 
+		decimalPoint="5"></property> <property name="wind_direction_mean" type="DOUBLE" 
+		minValue="1" maxValue="100000" decimalPoint="5"></property> <property name="yaw_position" 
+		type="DOUBLE" minValue="1" maxValue="100000" decimalPoint="5"></property> 
+		<property name="yaw_speed" type="DOUBLE" minValue="1" maxValue="100000" decimalPoint="5"></property> 
+		<property name="pitch1_angle" type="DOUBLE" minValue="1" maxValue="100000" 
+		decimalPoint="5"></property> <property name="pitch2_angle" type="DOUBLE" 
+		minValue="1" maxValue="100000" decimalPoint="5"></property> <property name="pitch3_angle" 
+		type="DOUBLE" minValue="1" maxValue="100000" decimalPoint="5"></property> 
+		</table> -->
+</configuration>
