@@ -236,7 +236,6 @@ public class ComUtil {
 			}
 		}
 	}
-	
 	/**
 	 * 将分为单位的转换为元 （除100）
 	 * @param amount

@@ -54,6 +54,12 @@ public class RandomGaussian extends AbstractRandomInt<Double> {
 	}
 
 	public static void main(String[] args) {
+		
+		
+		Random r = new Random();
+		  for(int i=0; i<100; i++){
+		     // System.out.println(r.nextGaussian());
+		  }
 		// TODO Auto-generated method stub
 		RandomGaussian randomGaussian = new RandomGaussian(System.currentTimeMillis(), 2);
 
@@ -63,9 +69,41 @@ public class RandomGaussian extends AbstractRandomInt<Double> {
 		for (int i = 0; i < 1000; i++) {
 			double tmp =randomGaussian.nextValue();
 			if(tmp>90){
-				System.out.println(tmp);
+			//	System.out.println((int)tmp);
 			}
 			
 		}
+		
+		//生成一个数组的高斯分布
+		randomGaussian.a=5;
+		randomGaussian.b=10;
+		int sum=0;
+		int count=4;
+		double s =0;
+		int left =0;
+		while(true){
+			for(int i=0;i<count;i++){
+				double tmp =randomGaussian.nextValue();
+				if(tmp<0){
+					continue;
+				}
+				if(5-tmp>0){
+					left++;
+				}
+				s = s+(5-tmp)*(5-tmp);
+				System.out.println((int)tmp);
+				sum+=(int)tmp;
+			}
+			System.out.println(sum);
+			System.out.println(s);
+			if(sum==(count*randomGaussian.a) && (randomGaussian.b*randomGaussian.b-s)<=10 && left==2)
+				break;
+			
+			sum=0;
+			s=0;
+			left=0;
+		}
+		
+		
 	}
 }
